@@ -1,0 +1,38 @@
+image: ubuntu:jammy
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+
+before_script:
+  - apt-get update
+  - apt-get upgrade -y
+  - apt-get install -y python3-pip
+  - pip install mkdocs-material
+  - pip install pymdown-extensions
+  - pip install mkdocs-minify-plugin
+  - pip install mkdocs-macros-plugin
+
+test:
+  stage: test
+  script:
+    - mkdocs build --strict --verbose --site-dir test
+  artifacts:
+    paths:
+      - test
+  rules:
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+pages:
+  stage: deploy
+  script:
+    - mkdocs build --verbose
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+ 
