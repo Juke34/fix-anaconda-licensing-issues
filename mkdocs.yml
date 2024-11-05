@@ -14,6 +14,7 @@ edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
 theme:
   language: en  # default language
   name: material
+  home: en/index.md
   logo: images/IRD.png # logo top left page
   search_index_only: true
   include_search_page: true
