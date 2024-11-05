@@ -1,7 +1,7 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 
-# Introduction to CONDA
+# Avoid conda licensing issues
 ---------------------------
 
 <img src="images/IRD.png" width="300" height="100" /> <img src="images/MIVEGEC.png" width="150" height="100" />
@@ -18,13 +18,12 @@
           * [Manual](#manual)
           * [Conda](#conda)
         * [Testing and building the website](#testing-and-building-the-website)
-   * [Acknowledgement](#acknowledgement)
    * [License](#license)
 
 
 ## Foreword
 
-The course itself lives [https://mivegec.pages.ird.fr/dainat/malbec-conda/](https://mivegec.pages.ird.fr/dainat/malbec-conda/),
+The course itself lives [https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/](https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/),
 where you can find all the relevant information.  
 This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course.
 
@@ -114,15 +113,6 @@ conda activate education
 * `mkdocs build` - Build the documentation site.
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs -h` - Print help message and exit.
-
-
-
-##  Acknowledgement
-
- * NBIS - This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course that can be find [here](https://github.com/NBISweden/workshop-reproducible-research).
- [<img align="right" src="images/NBIS.png" width="100" height="50" />](https://nbis.se)
- * @jhayer and @HadrienG about help in use and rendering with mkdocs and other features.
- * All contributors
 
 ## License
 
