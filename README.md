@@ -23,7 +23,7 @@
 
 ## Foreword
 
-The course itself lives [https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/](https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/),
+The course itself lives [https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/en/](https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/en/),
 where you can find all the relevant information.  
 This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course.
 
