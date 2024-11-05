@@ -1,4 +1,4 @@
-# Check you conda installation
+# Check your conda installation
 
 Here we show how to check your conda distribution to avoid any licensing issue.
 
@@ -42,7 +42,8 @@ Here we show how to check your conda distribution to avoid any licensing issue.
     * mro-archive
     * msys2 (part of defaults)
 
-    **You must remove them.** Here an example how to remove the `defaults` channel:
+    **You must remove them.**  
+    Here an example how to remove the `defaults` channel:
 
     ```bash
     conda config --remove channels defaults
@@ -56,7 +57,7 @@ Here we show how to check your conda distribution to avoid any licensing issue.
 
 ## Miniforge
 
- **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses Conda-forge as its default package source. In othet terms, everythong is fine! 
+ **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses `conda-forge` as its default package source. In other terms, everything is fine! 
 
 You may check the channels set for you installation (it interrogates the .condarc file):
 
@@ -65,7 +66,7 @@ conda config --show channels
 ```
 
 !!! Note
-    * If you plan to add extra channels, be carefull to avoid any of channel under Anaconda Inc. license:   defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2.
+    * If you plan to add extra channels, be careful to avoid any of channel under Anaconda Inc. license:   defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2.
 
-    * If you switch from Anaconda or Miniconda to Miniforge you may have the channels set up by your previous installation in the .condarc file. Please follow the procedure to remove the channels under Anaconda Inc license i.e `conda config --remove channels defaults`.
+    * If you switch from Anaconda or Miniconda to Miniforge you may have the channels set up by your previous installation in the .condarc file. Please follow the procedure to remove the channels under Anaconda Inc license e.g `conda config --remove channels defaults`.
 

@@ -9,8 +9,11 @@ Here we show how to install conda without any licensing issue.
     There are several Conda-related tool you may have encountered ([see here for more information](../conda-distrib/)):  
 
     * **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses Conda-forge as its default package source, which is free to use.  
-    * **Miniconda** which is the lightweight version of Anaconda, the Conda package and environment manager. /!\ contains defaults channels that are not totaly free!  
-    * **Anaconda**, which is a distribution of not only Conda, but also over 150 scientific Python packages. It's generally better to stick with only Conda, *i.e.* installing with Miniforege, Mambaforge or Miniconda, rather than installing 3 GB worth of packages you may not even use. /!\ The license is not free for company (even public) over 200 employees. /!\/!\ contains defaults channels that are not totaly free!
+    * **Miniconda** which is the lightweight version of Anaconda, the Conda package and environment manager.  
+    /!\ contains defaults channels that are not totaly free!  
+    * **Anaconda**, which is a distribution of not only Conda, but also over 150 scientific Python packages. It's generally better to stick with only Conda, *i.e.* installing with Miniforge, Mambaforge or Miniconda, rather than installing 3 GB worth of packages you may not even use.  
+    /!\ The license is not free for company (even public) over 200 employees.  
+    /!\/!\ contains defaults channels that are not totaly free!
     
 
 **Install Miniforge**  
@@ -22,12 +25,12 @@ Choose the appropriate installer from the list you can found here:
 Then copy the link and download the installer on your computer, see example below: 
 
 ```bash
-# Download Miniconda3 installer for 64-bit Linux
+# Download Miniforge installer for 64-bit Linux
 curl -L https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh -O
 ```
 or
 ```bash
-# Download Miniconda3 installer for 64-bit Linux
+# Download Miniforge installer for 64-bit Linux
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh 
 ```
 
@@ -48,7 +51,7 @@ Please, press ENTER to continue <br>
 </div>
 
 Press ![](../images/enter-key.png){: style="height:30px;"}  
-Then press ![](../images/space-key.png){: style="height:30px;"} several times until reaching the next question
+Then press ![](../images/space-key.png){: style="height:30px;"} several times until reaching the next question.
 
 - Do you accept the license terms?  
  Yes  
@@ -88,14 +91,14 @@ conda config --set auto_activate_base false
 
 ### Channels
 
-You’re all set! Miniforge only includes the conda-forge channel, which is free to use.  
+You’re all set! Miniforge only includes the `conda-forge` channel, which is free to use.  
 To verify, you can type the following command (it interrogates the .condarc file):
 
 ```bash
 conda config --show channels
 ```
 
-You can add any free channel e.g. bioconda as follow:
+You can add any free channel e.g. `bioconda` as follow:
 
 ```bash
 conda config --add channels bioconda
@@ -105,4 +108,4 @@ conda config --set channel_priority strict
 
 
 !!! Note
-    If your Miniforge installation comes after Anaconda or Miniconda uninstallation, you may have the channels set from your previous installation in the .condarc file. It may explain why you do not have only the `conda-forge` channel as expected. Please follow the procedure to remove all the channels under Anaconda Inc license i.e `conda config --remove channels defaults`.
+    If your Miniforge installation comes after Anaconda or Miniconda uninstallation, you may have the channels set from your previous installation in the .condarc file. It may explain why you do not have only the `conda-forge` channel as expected. Please follow the procedure to remove all the channels under Anaconda Inc license e.g `conda config --remove channels defaults`.
