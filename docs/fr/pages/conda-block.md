@@ -3,15 +3,22 @@ Même si vous configurez correctement les canaux dans lesquels vous télécharge
 Une solution radicale consiste à demander aux administrateurs du réseau de bloquer les téléchargements à partir des canaux sous licence Anaconda Inc.:
 
 ```
-https://conda.anaconda.org/pkgs/main
-https://conda.anaconda.org/pkgs/free
-https://conda.anaconda.org/pkgs/r
-https://conda.anaconda.org/pkgs/mro
-https://conda.anaconda.org/pkgs/pro
-https://conda.anaconda.org/pkgs/archive
-https://conda.anaconda.org/pkgs/mro-archive
-https://conda.anaconda.org/pkgs/msys2
+https://repo.anaconda.com/pkgs/main/
+https://conda.anaconda.org/main/ 
+https://conda.anaconda.org/anaconda/ 
+https://repo.anaconda.com/pkgs/r/
+https://conda.anaconda.org/r/
+https://repo.anaconda.com/pkgs/msys2/
+https://conda.anaconda.org/msys2/
+https://repo.anaconda.com/pkgs/free/
+https://conda.anaconda.org/free/
+https://repo.anaconda.com/pkgs/archive/
+https://repo.anaconda.com/pkgs/pro/
+https://conda.anaconda.org/anaconda-extras/
+https://repo.anaconda.com/pkgs/mro
+https://repo.anaconda.com/mro-archive
 ```
+Plus d'information [ici](https://docs.anaconda.com/working-with-conda/reference/default-repositories/).
 
 !!! Warning "Attention" 
     Vous pourriez être tenté de bloquer l'adresse `https://conda.anaconda.org` directement, mais c'est une mauvaise idée.  
