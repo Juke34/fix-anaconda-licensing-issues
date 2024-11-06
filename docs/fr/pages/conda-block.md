@@ -18,7 +18,7 @@ https://conda.anaconda.org/anaconda-extras/
 https://repo.anaconda.com/pkgs/mro
 https://repo.anaconda.com/mro-archive
 ```
-Plus d'information [ici](https://docs.anaconda.com/working-with-conda/reference/default-repositories/).
+Plus d'information [ici](https://docs.anaconda.com/working-with-conda/reference/default-repositories/) et [ici](https://repo.anaconda.com/pkgs/).
 
 !!! Warning "Attention" 
     Vous pourriez être tenté de bloquer l'adresse `https://conda.anaconda.org` directement, mais c'est une mauvaise idée.  

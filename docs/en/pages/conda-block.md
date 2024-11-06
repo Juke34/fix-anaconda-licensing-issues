@@ -19,7 +19,7 @@ https://repo.anaconda.com/pkgs/mro
 https://repo.anaconda.com/mro-archive
 ```
 
-More information [here](https://docs.anaconda.com/working-with-conda/reference/default-repositories/).
+More information [here](https://docs.anaconda.com/working-with-conda/reference/default-repositories/) and [here](https://repo.anaconda.com/pkgs/).
 
 !!! Warning 
     You might be tempted to block the address `https://conda.anaconda.org` directly, but this is a bad idea.
