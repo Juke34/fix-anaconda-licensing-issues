@@ -1,6 +1,6 @@
 ![](pages/images/Conda_logo.jpg){: style="height:100px"}
 
-# Avoiding the Pitfalls of Anaconda Licensing: A Practical Guide
+# Avoiding the Pitfalls of the Anaconda License: A Practical Guide
 
 Anaconda's license changes during 2024 have caused some concern, particularly in specific sectors such as academia, research and non-profit organizations, which have relied on the platform thinking it was available for free.
 

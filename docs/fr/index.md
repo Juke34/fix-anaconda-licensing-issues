@@ -1,6 +1,6 @@
 ![](pages/images/Conda_logo.jpg){: style="height:100px"}
 
-# Éviter les Pièges des Licences Anaconda : Guide Pratique
+# Éviter les Pièges de la Licence Anaconda : Guide Pratique
 
 Les changements de licence d'Anaconda courant 2024 ont suscité quelques inquiétudes, en particulier dans des secteurs spécifiques tels que l'université, la recherche et les organisations à but non lucratif, qui se sont appuyés sur la plateforme en pensant qu'elle était disponible gratuitement.
 
