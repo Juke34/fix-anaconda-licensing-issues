@@ -1,4 +1,4 @@
-# Check your conda installation
+# Check and fix your installation for licensing problems
 
 Here we show how to check your conda distribution to avoid any licensing issue.
 

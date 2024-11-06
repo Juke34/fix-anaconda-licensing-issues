@@ -1,4 +1,4 @@
-# Vérifier votre installation conda
+# Vérifier et corriger les problèmes de license de son installation
 
 Nous montrons ici comment vérifier votre distribution conda afin d'éviter tout problème de licence.
 

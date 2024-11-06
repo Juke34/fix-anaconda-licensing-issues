@@ -22,11 +22,12 @@ The heart of the changes lies in Anaconda's definition of â€œOrganizational Useâ
 
 ## My organization has more than 200 employees, how can I avoid licensed items?
 
-* Ban **Anaconda Distribution**:
-    Turn to other alternatives: Miniconda or preferably Miniforge.
+* **Ban Anaconda Distribution**  
+    Turn to other alternatives: Miniconda or preferably Miniforge. <[see here](./pages/conda-distrib)>  
+    Install Miniforge <[see here](./pages/conda-installation)>
 
-* Ban licensed channels.
-    Check and remove licensed channels in conda configuration.
-    Prevent third parties from using licensed channels (when sharing environment).
+* **Ban [licensed channels](./pages/conda-channels/)**  
+    Check and remove licensed channels in conda configuration. <[see here](./pages/conda-check)>  
+    Prevent third parties from using licensed channels (when sharing environment). <[see here](./pages/conda-share)>  
 
 This guide is designed to help you with these steps, and more. Enjoy your visit!

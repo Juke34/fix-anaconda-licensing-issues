@@ -1,8 +1,6 @@
-# Installing Conda
+# Install conda without license problems: Miniforge
 
-Here we show how to install conda without any licensing issue.
-
-## Download
+Here we show how to install Miniforge, a minimal version of Conda, which avoids licensing issues.
 
 !!! info "Different Condas"
 
@@ -16,7 +14,7 @@ Here we show how to install conda without any licensing issue.
     /!\/!\ contains defaults channels that are not totaly free!
     
 
-**Install Miniforge**  
+## Download
 
 Conda is installed by downloading and executing an installer, but which version you need depends on your operating system.  
 
@@ -105,7 +103,6 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
-
 
 !!! Note
     If your Miniforge installation comes after Anaconda or Miniconda uninstallation, you may have the channels set from your previous installation in the .condarc file. It may explain why you do not have only the `conda-forge` channel as expected. Please follow the procedure to remove all the channels under Anaconda Inc license e.g `conda config --remove channels defaults`.

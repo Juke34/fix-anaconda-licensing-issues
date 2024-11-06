@@ -1,8 +1,6 @@
-# Installation de Conda
+# Installer conda sans problème de license: Miniforge
 
-Nous montrons ici comment installer Conda sans problème de licence.
-
-## Télécharger
+Nous montrons ici comment installer Miniforge, une version minimale de Conda, qui permet d'éviter les probèmes de licence.
 
 !!! info "Différents Condas"
     Il y a plusieurs outils liés à Conda que vous avez pu rencontrer ([voir ici pour plus d'informations](../conda-distrib/)) :
@@ -14,7 +12,7 @@ Nous montrons ici comment installer Conda sans problème de licence.
     /!\ La licence n'est pas gratuite pour les entreprises (même publiques) de plus de 200 employés.  
     /!\ /!\ il utilise des canaux par défaut qui ne sont pas totalement libres ! 
 
-**Installer Miniforge**
+## Télécharger
 
 Conda est installé en téléchargeant et en exécutant un programme d'installation, mais la version dont vous avez besoin dépend de votre système d'exploitation.  
 
@@ -32,7 +30,7 @@ ou
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh 
 ```
 
-## Installation
+## Installer
 
 Vous pouvez maintenant exécuter le programme d'installation :
 
@@ -77,7 +75,7 @@ rm Miniforge3-Linux-x86_64.sh
 ```
 
 
-## Configuration
+## Configurer
 
 ### Activation automatique
 
@@ -87,7 +85,7 @@ Par défaut, conda sera activé pour chaque nouveau terminal que vous ouvrirez (
 conda config --set auto_activate_base false
 ```
 
-### Canaux
+### Les canaux
 
 Vous êtes prêts ! Miniforge n'inclut que le canal `conda-forge`, dont l'utilisation est gratuite.  
 Pour vérifier, vous pouvez taper la commande suivante (elle interroge le fichier .condarc) :

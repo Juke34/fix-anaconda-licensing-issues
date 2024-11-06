@@ -22,11 +22,12 @@ Le cœur des changements se trouve dans la définition d'Anaconda de « Organiza
 
 ## Mon organisation fait plus de 200 employés, comment eviter les éléments sous license?
 
-* Bannir **Anaconda Distribution**.  
-    Il faut se tourner vers d'autres alternative: Miniconda ou préférentiellement Miniforge.
+* **Bannir Anaconda Distribution**  
+    Il faut se tourner vers d'autres alternative: Miniconda ou préférentiellement Miniforge. <[voir ici](./pages/conda-distrib)>  
+    Installer Miniforge <[voir ici](./pages/conda-installation)>
 
-* Bannir les canaux sous license.  
-    Verifier et enlever les canaux sous license dans la configuration conda.  
-    Eviter au tiers l'utilisation des canaux sous license (lors de partage d'environment).
+* **Bannir [les canaux sous license](./pages/conda-channels/)**  
+    Verifier et enlever les canaux sous license dans la configuration conda. <[voir ici](./pages/conda-check)>  
+    Eviter au tiers l'utilisation des canaux sous license (lors de partage d'environment). <[voir ici](./pages/conda-share)>
 
 Ce guide est fait pour vous aider dans ces démarches, voir plus. Bonne visite.
