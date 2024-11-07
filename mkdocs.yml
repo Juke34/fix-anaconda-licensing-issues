@@ -1,13 +1,13 @@
 # Project information
 site_name: Avoiding the Pitfalls of the Anaconda License
 site_author: Jacques Dainat et al.
-site_url: https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues
+site_url: https:/juke34.github.io/fix-anaconda-licensing-issues/en/
 site_description: Avoid conda licensing issues
 site_dir: public # When you build your site, all of the files are written to the directory assigned to the site_dir configuration option (defaults to "site")
 
 # Repository
-repo_name: 'malbec-fix-conda-licensing-issues'
-repo_url: 'https://forge.ird.fr/mivegec/dainat/malbec-fix-conda-licensing-issues'
+repo_name: 'fix-anaconda-licensing-issues'
+repo_url: 'https://github.com/Juke34/fix-anaconda-licensing-issues'
 edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
 
 # Configuration
@@ -85,7 +85,7 @@ extra:
   contact: jacques.dainat@ird.fr
   institute: IRD
   unit: MIVEGEC
-  repo: https://forge.ird.fr/mivegec/dainat/malbec-fix-conda-licensing-issues
+  repo: https://github.com/Juke34/fix-anaconda-licensing-issues
   color_table_header: "#333a99"
 
   # --- set alternative languages ---

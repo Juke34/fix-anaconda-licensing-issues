@@ -1,7 +1,7 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 
-# Avoid conda licensing issues
+# Fix Anaconda licensing issues
 ---------------------------
 
 <img src="images/IRD.png" width="300" height="100" /> <img src="images/MIVEGEC.png" width="150" height="100" />
@@ -23,7 +23,7 @@
 
 ## Foreword
 
-The course itself lives [https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/en/](https://mivegec.pages.ird.fr/dainat/malbec-fix-conda-licensing-issues/en/),
+The course itself lives [https:/juke34.github.io/fix-anaconda-licensing-issues/en/](https:/juke34.github.io/fix-anaconda-licensing-issues/en/),
 where you can find all the relevant information.  
 This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course.
 
