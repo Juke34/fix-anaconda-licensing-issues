@@ -1,7 +1,7 @@
 # Project information
 site_name: Avoiding the Pitfalls of the Anaconda License
 site_author: Jacques Dainat et al.
-site_url: https:/juke34.github.io/fix-anaconda-licensing-issues/en/
+site_url: https://juke34.github.io/fix-anaconda-licensing-issues/en/
 site_description: Avoid conda licensing issues
 site_dir: public # When you build your site, all of the files are written to the directory assigned to the site_dir configuration option (defaults to "site")
 
