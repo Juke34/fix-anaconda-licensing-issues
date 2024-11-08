@@ -2,13 +2,16 @@
 
 # Avoiding the Pitfalls of the Anaconda License: A Practical Guide
 
-Anaconda's license changes during 2024 have caused some concern, particularly in specific sectors such as academia, research and non-profit organizations, which have relied on the platform thinking it was available for free.
+The 2024 license changes by Anaconda have raised concerns, particularly among sectors like academia, research, and non-profits, which previously assumed that the platform was freely accessible.
 
-To complicate matters, there is often a misunderstanding of what is and isn't free when using conda, the package manager, versus the channels and distributions provided by Anaconda.
+Two significant challenges now are the distinction:  
+
+  - between free usage of Conda, the package manager itself, and the licensed Anaconda distribution, which is a graphical interface integrating conda. 
+  - between the free channels versus the licensed channels managed by Anaconda (channels define where conda will fetch the package).
 
 ## What has changed?
 
-The heart of the changes lies in Anaconda's definition of “Organizational Use”. Under the new [license conditions](https://legal.anaconda.com/policies/en/?name=terms-of-service#anaconda-terms-of-service), any organization (government entities and non-profit organizations) with at least 200 employees or contractors is now required to purchase a paid license to use Anaconda software or packages from Anaconda-managed channels.
+The primary change centers on Anaconda’s updated definition of “Organizational Use”. Under the new [license conditions](https://legal.anaconda.com/policies/en/?name=terms-of-service#anaconda-terms-of-service), any organization (including government agencies and non-profits) with 200 or more employees or contractors must now acquire a paid license to use Anaconda’s software or packages provided via Anaconda’s managed channels.
 
 ## In brief
 

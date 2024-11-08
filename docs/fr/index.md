@@ -2,9 +2,12 @@
 
 # Éviter les Pièges de la Licence Anaconda : Guide Pratique
 
-Les changements de licence d'Anaconda courant 2024 ont suscité quelques inquiétudes, en particulier dans des secteurs spécifiques tels que l'université, la recherche et les organisations à but non lucratif, qui se sont appuyés sur la plateforme en pensant qu'elle était disponible gratuitement.
+Les modifications apportées à la licence 2024 par Anaconda ont suscité des inquiétudes, en particulier dans des secteurs tels que l'université, la recherche et les organisations à but non lucratif, qui considéraient jusqu'à présent que la plateforme était librement accessible.
 
-Pour compliquer les choses, il y a souvent un malentendu sur ce qui est gratuit et ce qui ne l'est pas lorsqu'on utilise conda, le gestionnaire de paquets, par rapport aux canaux et aux distributions fournis par Anaconda.
+Deux difficulés importantes aujourd'hui sont la distinction :  
+
+  - entre l'utilisation gratuite de Conda, le gestionnaire de paquets lui-même, et la distribution sous licence appelé anaconda, qui est une interface graphique intégrant Conda. 
+  - entre les canaux libres et les canaux sous licence gérés par Anaconda (les canaux définissent le lieu où Conda cherche les paquets).
 
 ## Qu'est-ce qui a changé ?
 
