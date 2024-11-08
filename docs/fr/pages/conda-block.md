@@ -1,4 +1,4 @@
-Même si vous configurez correctement les canaux dans lesquels vous téléchargez les paquets pour éviter les canaux sous licence ([liste des canaux sous licence](../conda-channels), [vérifiez et corrigez votre installation pour les problèmes de licence](../conda-check)), au niveau institutionnel, il peut être difficile de s'assurer que tout le monde évite le piège de la licence d'Anaconda Inc.
+Même si vous configurez correctement les canaux dans lesquels vous téléchargez les paquets pour éviter les canaux sous licence ([liste des canaux sous licence](../conda-channels), [vérifier et corriger son installation](../conda-check)), au niveau institutionnel, il peut être difficile de s'assurer que tout le monde évite le piège de la licence d'Anaconda Inc.
 
 Une solution radicale consiste à demander aux administrateurs du réseau de bloquer les téléchargements à partir des canaux sous licence Anaconda Inc.:
 

@@ -1,4 +1,4 @@
-Even if you correctly configure the channels into which you download packages to avoid licensed channels ([list of licensed channels](../conda-channels), [check and fix your installation for licensing problems](../conda-check)), at the institutional level it may be difficult to ensure everyone is avoiding the Anaconda Inc. license trap.
+Even if you correctly configure the channels into which you download packages to avoid licensed channels ([list of licensed channels](../conda-channels), [check and fix your installation](../conda-check)), at the institutional level it may be difficult to ensure everyone is avoiding the Anaconda Inc. license trap.
 
 A radical solution is to ask network administrators to block downloads from Anaconda Inc. licensed channels:
 
