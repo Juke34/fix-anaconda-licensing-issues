@@ -21,52 +21,70 @@ Here we show how to check your conda distribution to avoid any licensing issue.
 
 !!! Warning
 
-    * Miniconda uses `defaults` channel that is not free for company (even public) over 200 employees.
+    * Miniconda uses `defaults` channel that is not free for company (even public) over 200 employees.  
+    Follow instruction to get rid of channels under anaconda inc. license: [here](#check-channels)
 
-    You can check the channels set for your installation as follow (it interrogates the .condarc file):
 
-    ```bash
-    conda config --show channels
-    ```
-
-    If any of these channels is listed ([see here for more information](../list_channels)): 
-
-    * defaults
-    * main 
-    * anaconda
-    * free
-    * r 
-    * mro
-    * pro
-    * archive
-    * mro-archive
-    * msys2 (part of defaults)
-
-    **You must remove them.**  
-    Here an example how to remove the `defaults` channel:
-
-    ```bash
-    conda config --remove channels defaults
-    ```
-        
-    Check everything went well:
-
-    ```bash
-    conda config --show channels
-    ```
+{%
+include "en/pages/channel-check-note.md"
+%}
 
 ## Miniforge
 
- **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses `conda-forge` as its default package source. In other terms, everything is fine! 
+ **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses `conda-forge` as its default package source. In other terms, everything is supposed to be fine!  
 
-You may check the channels set for you installation (it interrogates the .condarc file):
+{%
+include "en/pages/channel-check-warning.md"
+%}
+
+{%
+include "en/pages/channel-check-note.md"
+%}
+
+## Micromamba
+
+ **Micromamba**  is the lightest version of "Conda", it comes with zero preinstalled packages, no base environment and the required installation space is just the executable.  
+`conda-forge` is the only default package source you can set up during the installation procedure. In other terms, everything is supposed to be fine!  
+
+{%
+include "en/pages/channel-check-warning.md"
+%}
+
+{%
+include "en/pages/channel-check-note.md"
+%}
+
+## Check channels
+
+
+Check the channels set for your installation as follow:
 
 ```bash
 conda config --show channels
 ```
 
-!!! Note
-    * If you plan to add extra channels, be careful to avoid any of channel under Anaconda Inc. license:   defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2.
+If any of these channels is listed ([see here for more information](../list_channels)): 
 
-    * If you switch from Anaconda or Miniconda to Miniforge you may have the channels set up by your previous installation in the .condarc file. Please follow the procedure to remove the channels under Anaconda Inc license e.g `conda config --remove channels defaults`.
+* defaults
+* main 
+* anaconda
+* free
+* r 
+* mro
+* pro
+* archive
+* mro-archive
+* msys2
 
+**You must remove them.**  
+Here an example how to remove the `defaults` channel:
+
+```bash
+conda config --remove channels defaults
+```
+        
+Check everything went well:
+
+```bash
+conda config --show channels
+```

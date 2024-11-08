@@ -75,6 +75,8 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
+  - external-markdown # Package mkdocs-embed-external-markdown /!\ has to be set before macros
+  - include-markdown # Package mkdocs-include-markdown-plugin
   - macros
 
 # Customization
@@ -87,6 +89,7 @@ extra:
   unit: MIVEGEC
   repo: https://github.com/Juke34/fix-anaconda-licensing-issues
   color_table_header: "#333a99"
+  anaconda_channels:  "defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2"
 
   # --- set alternative languages ---
   alternate:
@@ -107,17 +110,17 @@ nav:
       - Home: en/index.md
       - Conda distributions: en/pages/conda-distrib.md
       - Licensed channels: en/pages/conda-channels.md
-      - Install conda without license problems: en/pages/conda-installation.md
-      - Check and fix your installation for licensing problems: en/pages/conda-check.md
-      - Sharing environments, avoiding licensing problems: en/pages/conda-share.md  
+      - Installing conda: en/pages/conda-installation.md
+      - Check and fix your installation: en/pages/conda-check.md
+      - Sharing environments: en/pages/conda-share.md  
       - Block access to licensed channels: en/pages/conda-block.md  
-      - Avoiding pitfalls when installing packages: en/pages/conda-install-package.md
+      - When installing packages: en/pages/conda-install-package.md
   - Accueil (Français):
       - Accueil: fr/index.md
       - Les distributions de conda: fr/pages/conda-distrib.md
       - Les canaux sous license: fr/pages/conda-channels.md
-      - Installer conda sans problème de license: fr/pages/conda-installation.md
-      - Verifier et corriger les problèmes de license de son installation: fr/pages/conda-check.md
-      - Partage d'environnement, éviter les problèmes de license: fr/pages/conda-share.md
+      - Installer conda: fr/pages/conda-installation.md
+      - Verifier et corriger son installation: fr/pages/conda-check.md
+      - Partage d'environnement: fr/pages/conda-share.md
       - Bloquer l'accès aux canaux sous licence: fr/pages/conda-block.md  
-      - Éviter les pièges lors de l'installation de paquets: fr/pages/conda-install-package.md
+      - Lors de l'installation de paquets: fr/pages/conda-install-package.md

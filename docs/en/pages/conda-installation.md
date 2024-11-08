@@ -1,20 +1,15 @@
-# Install conda without license problems: Miniforge
+# Install conda without license problems
 
-Here we show how to install Miniforge, a minimal version of Conda, which avoids licensing issues.
+Here we present two solutions for installing Conda without Anaconda license problems:
 
-!!! info "Different Condas"
+ * Miniforge a light version of Conda that use `conda-forge` as its default package source (channel), which is free to use.
+ * Micromamba a minimal version of Conda (it is actually `mamba`, a conda implemenation in C++) that avoid by default any channel under Anaconda license.
 
-    There are several Conda-related tool you may have encountered ([see here for more information](../conda-distrib/)):  
+For an overview of the different conda distribution [see here](../conda-distrib).
 
-    * **Miniforge**  is a minimal version of Conda, like Miniconda, but it uses Conda-forge as its default package source, which is free to use.  
-    * **Miniconda** which is the lightweight version of Anaconda, the Conda package and environment manager.  
-    /!\ contains defaults channels that are not totaly free!  
-    * **Anaconda**, which is a distribution of not only Conda, but also over 150 scientific Python packages. It's generally better to stick with only Conda, *i.e.* installing with Miniforge, Mambaforge or Miniconda, rather than installing 3 GB worth of packages you may not even use.  
-    /!\ The license is not free for company (even public) over 200 employees.  
-    /!\/!\ contains defaults channels that are not totaly free!
-    
+## Miniforge
 
-## Download
+### Download
 
 Conda is installed by downloading and executing an installer, but which version you need depends on your operating system.  
 
@@ -32,7 +27,7 @@ or
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh 
 ```
 
-## Install
+### Install
 
 Now you can execute the installer:
 
@@ -76,8 +71,13 @@ You can now get rid of the installer, you don't need it anymore
 rm Miniforge3-Linux-x86_64.sh
 ```
 
+### Configure Channels
 
-## Configure
+Even if `Miniforge` only includes the `conda-forge` channel, which is free to use, it is always good to check the installation.
+
+{%
+include "en/pages/channel-check.md"
+%}
 
 ### Auto activation
 
@@ -87,22 +87,65 @@ By default conda will be activated to every new terminal you will open (in the `
 conda config --set auto_activate_base false
 ```
 
-### Channels
 
-You’re all set! Miniforge only includes the `conda-forge` channel, which is free to use.  
-To verify, you can type the following command (it interrogates the .condarc file):
+## Micromamba
 
-```bash
-conda config --show channels
-```
-
-You can add any free channel e.g. `bioconda` as follow:
-
-```bash
-conda config --add channels bioconda
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-```
+Micromamba is a fully statically-linked, self-contained, executable. This means that the base environment is completely empty. The configuration for micromamba is slightly different, namely all environments and cache will be created by default under the MAMBA_ROOT_PREFIX environment variable. There is also no pre-configured .condarc/.mambarc shipped with micromamba (they are however still read if present).
 
 !!! Note
-    If your Miniforge installation comes after Anaconda or Miniconda uninstallation, you may have the channels set from your previous installation in the .condarc file. It may explain why you do not have only the `conda-forge` channel as expected. Please follow the procedure to remove all the channels under Anaconda Inc license e.g `conda config --remove channels defaults`.
+    When using micromamba, the `conda` commands are replaced by `micromamba`!
+
+### Download and Install
+
+Micromamba is installed by downloading and executing an installer:  
+
+```bash
+# Download Micromamba installer 
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+```
+
+The installer will ask you questions during the installation:
+
+<div class="custom-terminal">
+Micromamba binary folder? [~/.local/bin]
+</div>
+
+Press ![](../images/enter-key.png){: style="height:30px;"}  
+
+<div class="custom-terminal">
+Init shell (bash)? [Y/n]
+</div>
+
+Press ![](../images/enter-key.png){: style="height:30px;"}   
+
+<div class="custom-terminal">
+Configure conda-forge? [Y/n]
+</div>
+
+Press ![](../images/enter-key.png){: style="height:30px;"}   
+
+<div class="custom-terminal">
+Prefix location? [~/micromamba]
+</div>
+
+Press ![](../images/enter-key.png){: style="height:30px;"}   
+
+To take the changes into account restart your shell or run:
+```
+# (or ~/.bash_profile, ~/.zshrc, ~/.xonshrc, ~/.config/fish/config.fish, ...)
+source ~/.bashrc 
+```
+
+You can verify that the installation worked by running:
+
+```bash
+micromamba --version
+```
+
+### Configure Channels
+
+Even if `Micromamba` only includes the `conda-forge` channel, which is free to use, it is always good to check the installation.
+
+{%
+include "en/pages/channel-check.md"
+%}

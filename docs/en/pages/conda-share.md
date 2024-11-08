@@ -20,6 +20,9 @@ When sharing the file with someone else, if this person did not deactivate the `
 
 To avoid this issue you should add the  `- nodefaults` channel in the `channels`section of your saved yaml environment, which will deactivate the `defaults` channel from the local conda configuration (`.condarc`) of the computer using it.
 
+For more details, see the [relevant conda docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually).
+
+
 !!! Warning "**Before sharing an environemnt with someone, verify the `channels` section of the yaml file**"
     * Verify to not have any of licensed channels : defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2
     * add `- nodefaults` to deactivate the `defaults` channel from `.condarc`

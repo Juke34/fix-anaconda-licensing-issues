@@ -25,7 +25,6 @@
 
 The course itself lives [https:/juke34.github.io/fix-anaconda-licensing-issues/en/](https:/juke34.github.io/fix-anaconda-licensing-issues/en/),
 where you can find all the relevant information.  
-This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course.
 
 ## Project layout
 
@@ -87,7 +86,9 @@ For the extensions:
 
 For the plugins:  
 `pip install mkdocs-minify-plugin`  
-`pip install mkdocs-macros-plugin`
+`pip install mkdocs-macros-plugin`  
+`pip install mkdocs-embed-external-markdown`  
+`pip install mkdocs-include-markdown-plugin`  
 
 ##### Conda
 

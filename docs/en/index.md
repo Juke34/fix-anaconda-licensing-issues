@@ -20,7 +20,7 @@ The heart of the changes lies in Anaconda's definition of â€œOrganizational Useâ
     - your organization has fewer than 200 employees, or
     - Your organization is exempt (e.g. students or educational institutions, provided it is used for program-based courses).
 
-## My organization has more than 200 employees, how can I avoid licensed items?
+## How can I avoid licensed items?
 
 * **Ban Anaconda Distribution**  
     Turn to other alternatives: Miniconda or preferably Miniforge. <[see here](./pages/conda-distrib)>  

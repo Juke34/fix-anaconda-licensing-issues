@@ -1,18 +1,15 @@
-# Installer conda sans problème de license: Miniforge
+# Installer conda sans problème de license
 
-Nous montrons ici comment installer Miniforge, une version minimale de Conda, qui permet d'éviter les probèmes de licence.
+Nous présentons ici deux solutions pour installer Conda sans problèmes de licence Anaconda :
 
-!!! info "Différents Condas"
-    Il y a plusieurs outils liés à Conda que vous avez pu rencontrer ([voir ici pour plus d'informations](../conda-distrib/)) :
+ * Miniforge une version allégée de Conda qui utilise `conda-forge` comme source de paquets par défaut (canal), qui est libre d'utilisation.
+ * Micromamba une version minimale de Conda (il s'agit en fait de `mamba`, une implémentation de Conda en C++) qui évite par défaut tout canal sous licence Anaconda.
 
-    * **Miniforge** est une version minimale de Conda, comme Miniconda, mais il utilise Conda-forge comme source de paquets par défaut, qui est libre d'utilisation.  
-    * **Miniconda** qui est la version légère d'Anaconda, le gestionnaire de paquets et d'environnement de Conda.  
-    /!\ il utilise des canaux par défaut qui ne sont pas totalement libres !  
-    * **Anaconda**, qui est une distribution non seulement de Conda, mais aussi de plus de 150 paquets scientifiques Python. Il est généralement préférable de s'en tenir à Conda, c'est-à-dire d'installer Miniforge, Mambaforge ou Miniconda, plutôt que d'installer 3 Go de paquets que vous n'utiliserez peut-être même pas.  
-    /!\ La licence n'est pas gratuite pour les entreprises (même publiques) de plus de 200 employés.  
-    /!\ /!\ il utilise des canaux par défaut qui ne sont pas totalement libres ! 
+Pour une vue d'ensemble des différentes distributions de Conda [voir ici](../conda-distrib).
 
-## Télécharger
+## Miniforge
+
+### Télécharger
 
 Conda est installé en téléchargeant et en exécutant un programme d'installation, mais la version dont vous avez besoin dépend de votre système d'exploitation.  
 
@@ -30,7 +27,7 @@ ou
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh 
 ```
 
-## Installer
+### Installer
 
 Vous pouvez maintenant exécuter le programme d'installation :
 
@@ -74,8 +71,14 @@ Vous pouvez maintenant vous débarrasser de l'installateur, vous n'en avez plus 
 rm Miniforge3-Linux-x86_64.sh
 ```
 
+### Configurer les canaux
 
-## Configurer
+Même si `Miniforge` n'inclut que le canal `conda-forge`, qui est libre d'utilisation, il est toujours bon de vérifier l'installation.
+
+{%
+include "fr/pages/channel-check.md"
+%}
+
 
 ### Activation automatique
 
@@ -85,24 +88,65 @@ Par défaut, conda sera activé pour chaque nouveau terminal que vous ouvrirez (
 conda config --set auto_activate_base false
 ```
 
-### Les canaux
+## Micromamba
 
-Vous êtes prêts ! Miniforge n'inclut que le canal `conda-forge`, dont l'utilisation est gratuite.  
-Pour vérifier, vous pouvez taper la commande suivante (elle interroge le fichier .condarc) :
-
-
-```bash
-conda config --show channels
-```
-
-Vous pouvez ajouter n'importe quel canal gratuit, par exemple `bioconda`, comme suit :
-
-```bash
-conda config --add channels bioconda
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-```
-
+Micromamba est un exécutable entièrement lié de manière statique et autonome. Cela signifie que l'environnement de base est complètement vide. La configuration de micromamba est légèrement différente, à savoir que tous les environnements et les caches seront créés par défaut sous la variable d'environnement MAMBA_ROOT_PREFIX. Il n'y a pas non plus de .condarc/.mambarc pré-configuré livré avec micromamba (ils sont cependant toujours lus s'ils sont présents).
 
 !!! Note
-    Si votre installation de Miniforge vient après la désinstallation d'Anaconda ou de Miniconda, il se peut que vous ayez les canaux de votre installation précédente dans le fichier .condarc. Cela peut expliquer pourquoi vous n'auriez pas seulement le canal `conda-forge` comme prévu. Veuillez suivre la procédure pour supprimer tous les canaux sous licence Anaconda Inc,  par exemple `conda config --remove channels defaults`.
+    Lorsque l'on utilise micromamba, les commandes `conda` sont remplacées par `micromamba` !
+
+### Télécharger et installer
+
+Micromamba est installé en téléchargeant et en exécutant un programme d'installation :  
+
+```bash
+# Télécharger le programme d'installation de Micromamba 
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+```
+
+Le programme d'installation vous posera des questions pendant l'installation :
+
+<div class="custom-terminal">
+Micromamba binary folder? [~/.local/bin]
+</div>
+
+Appuyer sur la touche ![](../images/enter-key.png){: style="height:30px;"}  
+
+<div class="custom-terminal">
+Init shell (bash)? [Y/n]
+</div>
+
+Appuyer sur la touche ![](../images/enter-key.png){: style="height:30px;"}   
+
+<div class="custom-terminal">
+Configure conda-forge? [Y/n]
+</div>
+
+Appuyer sur la touche ![](../images/enter-key.png){: style="height:30px;"}   
+
+<div class="custom-terminal">
+Prefix location? [~/micromamba]
+</div>
+
+Appuyer sur la touche ![](../images/enter-key.png){: style="height:30px;"}   
+
+Pour prendre en compte les modifications, redémarrez votre shell ou exécutez :
+
+```
+# (or ~/.bash_profile, ~/.zshrc, ~/.xonshrc, ~/.config/fish/config.fish, ...)
+source ~/.bashrc 
+```
+
+Vous pouvez vérifier que l'installation a fonctionné en lançant le programme :
+
+```bash
+micromamba --version
+```
+
+### Configurer les canaux
+
+Même si `Micromamba` n'inclut que le canal `conda-forge`, qui est libre d'utilisation, il est toujours bon de vérifier l'installation.
+
+{%
+include "fr/pages/channel-check.md"
+%}

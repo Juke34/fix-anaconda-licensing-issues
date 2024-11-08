@@ -20,7 +20,7 @@ Le cœur des changements se trouve dans la définition d'Anaconda de « Organiza
     - votre organisation compte moins de 200 employés, ou
     - Votre organisation est exemptée (par exemple, les étudiants ou les établissements d'enseignement, à condition qu’il soit utilisé pour des cours basés sur le programme).
 
-## Mon organisation fait plus de 200 employés, comment eviter les éléments sous license?
+## Comment eviter les éléments sous license?
 
 * **Bannir Anaconda Distribution**  
     Il faut se tourner vers d'autres alternative: Miniconda ou préférentiellement Miniforge. <[voir ici](./pages/conda-distrib)>  
