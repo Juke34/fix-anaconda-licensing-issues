@@ -1,9 +1,10 @@
 # Install conda without license problems
 
-Here we present two solutions for installing Conda without Anaconda license problems:
+Here, we present three solutions for using the Conda package ecosystem without Anaconda license problems:
 
- * Miniforge a light version of Conda that use `conda-forge` as its default package source (channel), which is free to use.
- * Micromamba a minimal version of Conda (it is actually `mamba`, a conda implemenation in C++) that avoid by default any channel under Anaconda license.
+* Miniforge, a light version of Conda that uses `conda-forge` as its default package source (channel), which is free to use.
+* Micromamba, a minimal version of Conda (actually, `mamba`, a Conda implementation in C++) that avoids any channel under the Anaconda license by default.
+* Pixi, a lightweight package manager implementation that uses the Conda package ecosystem. It is free to use and open source.
 
 For an overview of the different conda distribution [see here](../conda-distrib).
 
@@ -149,3 +150,33 @@ Even if `Micromamba` only includes the `conda-forge` channel, which is free to u
 {%
 include "en/pages/channel-check.md"
 %}
+
+## Pixi
+
+Pixi provides thorough [installation and setup instructions in its documentation](https://pixi.sh/latest/#installation).
+Review that documentation for the latest installation methods.
+For convenience, the typical methods follow.
+
+For Linux and macOS, an installer is available:
+
+```shell
+curl -fsSL https://pixi.sh/install.sh | bash
+```
+
+or install with [the `pixi` Homebrew formula](https://formulae.brew.sh/formula/pixi):
+
+```shell
+brew install pixi
+```
+
+For Windows:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"
+```
+
+To add channels to your project configuration in `pixi.toml`, use
+
+```shell
+pixi project channel add conda-forge
+```
