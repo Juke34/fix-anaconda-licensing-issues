@@ -54,6 +54,22 @@ include "en/pages/channel-check-warning.md"
 include "en/pages/channel-check-note.md"
 %}
 
+## Pixi
+
+**Pixi** is a lightweight, project-centric package management tool that uses the Conda ecosystem but presents a different command line tool.
+It is a single executable written in Rust.
+It safely uses only `conda-forge` by default.
+
+Run `pixi project channel list` to see configured channels or look for the `channels` key in `pixi.toml`.
+
+{%
+include "en/pages/channel-check-warning.md"
+%}
+
+{%
+include "en/pages/channel-check-note.md"
+%}
+
 ## Check channels
 
 
