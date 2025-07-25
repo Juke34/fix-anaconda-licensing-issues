@@ -1,0 +1,9 @@
+/* Style pour un bloc de code personnalisé avec fond noir */
+.custom-terminal {
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 12px
+}
